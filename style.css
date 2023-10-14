@@ -20,7 +20,6 @@
   margin: 5px auto;
   padding: 7px;
   width: 25%;
-  border: 1px solid tomato;
   border-radius: 9px;
 }
 #search-field {
@@ -28,6 +27,7 @@
 }
 
 #search-btn, #details-btn {
+  border: 1px solid tomato;
   font-weight: 700;
   background-color: black;
   color: tomato;
@@ -64,8 +64,8 @@
   width: 45px;
   height: 45px;
   margin: 0.5rem auto;
-  border: 4px solid grey;
-  border-top-color: #ff02ff;
+  border: 4px solid #606060;
+  border-top-color: #FF3D00;
   border-bottom-color: #FF3D00;
   border-radius: 50%;
   animation: rotation 1s linear infinite
