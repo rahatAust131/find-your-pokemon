@@ -19,7 +19,7 @@ searchBtn.addEventListener('click', () => {
       if (!response.ok) {
         console.log(response);
         loaderDiv.style.display = "none";
-        alert(`No pokemon found named "${searchField.value}" in the Pokedex!`);
+        alert(`No pokemon named "${searchField.value}" was found in the Pokedex!`);
         searchField.value = "";
         throw new Error(`Error! status: ${response.status}`);
       }
