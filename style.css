@@ -16,7 +16,7 @@
 }
 #search-field {
   display: block;
-  width: 25%;
+  width: 45%;
   margin: 0 auto;
   padding: 7px;
   border: 1px solid tomato;
@@ -28,7 +28,7 @@
   display: block;
   margin: 5px auto;
   padding: 7px;
-  width: 25%;
+  width: 45%;
   border: 1px solid tomato;
   border-radius: 9px;
   background-color: black;
@@ -39,6 +39,7 @@
   background-color: tomato;
   color: black;
 }
+
 #details-btn:hover {
   cursor: pointer;
   background-color: white;
@@ -51,7 +52,7 @@
   box-shadow: 0 0 5px grey;
   border-radius: 12px;
   background: linear-gradient(45deg, red, white);
-  width: 30%;
+  width: 85%;
   margin: 5px auto;
   padding: 15px 0;
   text-align: center;
@@ -59,5 +60,67 @@
 #result-container img {
   display: block;
   margin: 0 auto;
-  width: 30%;
+  width: 50%;
+}
+
+#loader {
+  display: none;
+  width: 45px;
+  height: 45px;
+  margin: 0.5rem auto;
+  border: 4px solid grey;
+  border-top-color: #ff02ff;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  animation: rotation 1s linear infinite
+}
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  #search-field, #search-btn, #details-btn {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 7px;
+    border: 1px solid tomato;
+    border-radius: 9px;
+    text-align: center;
+  }
+  #search-btn, #details-btn {
+    font-weight: 700;
+    display: block;
+    margin: 5px auto;
+    background-color: black;
+    color: tomato;
+  }
+  
+  #details-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+  
+  #result-container {
+    display: none;
+    border: 2px solid tomato;
+    box-shadow: 0 0 5px grey;
+    border-radius: 12px;
+    background: linear-gradient(45deg, red, white);
+    width: 80%;
+    margin: 5px auto;
+    padding: 15px 0;
+    text-align: center;
+  }
+  #result-container img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+  }
 }
